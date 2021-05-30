@@ -196,8 +196,15 @@ label:not(.hilt) {
 
 embed {
   display: none;
+
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
 }
 
+/* sound would only play once on pay reload. */
 #on-off:checked ~ embed {
   display: block;
 }
