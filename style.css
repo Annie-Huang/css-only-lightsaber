@@ -95,12 +95,12 @@ label:not(.hilt) {
   /*box-shadow: 0 0 1em limegreen;*/
   /* double up box-shadow value will make it more intense. The 1em, 1.5em, 2em, etc is making it more blur*/
   box-shadow:
-    inset 0 0 4px hsl(var(--blade-hue) 100% 50% / 1), /* add smooth transaction for green by adding the inset part, you can comment out to see the effect */
-    0 0 1em hsl(var(--blade-hue) 100% 50% / 0.8), /* for pure color, it is always 100% on the second value and 50% on the 3rd) */
-    0 0 1.5em hsl(var(--blade-hue) 100% 50% / 0.7),
-    0 0 2em hsl(var(--blade-hue) 100% 50% / 0.5),
-    0 0 3em hsl(var(--blade-hue) 100% 50% / 0.3),
-    0 0 5em hsl(var(--blade-hue) 100% 50% / 0.2);
+    inset 0 0 4px hsl(var(--blade-hue) 100% var(--blade-lightness) / 1), /* add smooth transaction for green by adding the inset part, you can comment out to see the effect */
+    0 0 1em hsl(var(--blade-hue) 100% var(--blade-lightness) / 0.8), /* for pure color, it is always 100% on the second value and 50% on the 3rd) */
+    0 0 1.5em hsl(var(--blade-hue) 100% var(--blade-lightness) / 0.7),
+    0 0 2em hsl(var(--blade-hue) 100% var(--blade-lightness) / 0.5),
+    0 0 3em hsl(var(--blade-hue) 100% var(--blade-lightness) / 0.3),
+    0 0 5em hsl(var(--blade-hue) 100% var(--blade-lightness) / 0.2);
 
   transition: transform 50ms ease-out;
   transform-origin: bottom;
