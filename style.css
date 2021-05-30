@@ -157,6 +157,25 @@ label:not(.hilt) {
 /* We want to target the .lightsaber's --blad-hue value
    Cannot use + because it's not a direct sibling, has to has ~, which means any sibling
 */
-input[id='red']:checked ~ .lightsaber {
+#green:checked ~ .lightsaber {
+  --blade-hue: 120;
+}
+
+#blue:checked ~ .lightsaber {
+  --blade-hue: 195;
+}
+
+#yellow:checked ~ .lightsaber {
+  --blade-hue: 60;
+}
+
+#purple:checked ~ .lightsaber {
+  --blade-hue: 290;
+}
+
+/*input[id='red']:checked ~ .lightsaber {*/
+#red:checked ~ .lightsaber {
   --blade-hue: 360;
 }
+
+
