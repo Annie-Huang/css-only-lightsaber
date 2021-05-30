@@ -83,6 +83,7 @@ label:not(.hilt) {
   );
 }
 
+/* This is for box-shadow */
 .blade {
   position: absolute;
   background: white;
@@ -124,6 +125,7 @@ label:not(.hilt) {
   /*z-index: -1;*/
 }
 
+/* the blade color itself */
 .blade::before {
   content: "";
   position: absolute;
@@ -178,4 +180,10 @@ label:not(.hilt) {
   --blade-hue: 360;
 }
 
+#darksaber:checked ~ .lightsaber {
+  --blade-lightness: 100%;
+}
+#darksaber:checked ~ .lightsaber .blade::before {
+  background: black;
+}
 
