@@ -90,4 +90,13 @@ label:not(.hilt) {
   width: 100%;
   bottom: 100%; /* bottom is 100% is 100% offset from bottom , so it starts from the top */
   border-radius: 100vw 100vw 0 0;
+
+  /*box-shadow: 0 0 1em limegreen;*/
+  /* double up box-shadow value will make it more intense. The 1em, 1.5em, 2em, etc is making it more blur*/
+  box-shadow:
+    0 0 1em hsl(var(--blade-hue) 100% 50% / 0.8), /* for pure color, it is always 100% on the second value and 50% on the 3rd) */
+    0 0 1.5em hsl(var(--blade-hue) 100% 50% / 0.7),
+    0 0 2em hsl(var(--blade-hue) 100% 50% / 0.5),
+    0 0 3em hsl(var(--blade-hue) 100% 50% / 0.3),
+    0 0 5em hsl(var(--blade-hue) 100% 50% / 0.2);
 }
