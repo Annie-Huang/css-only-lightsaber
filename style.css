@@ -123,3 +123,15 @@ label:not(.hilt) {
 @keyframes pulse {
   50% {opacity: 0.5}
 }
+
+/* Turn lightsaber on and off */
+
+/* Because the checkbox id is link to the label which is the .hilt.
+  So whenever you click and unclick the .hilt, it will check and uncheck the checkbox */
+#on-off:not(:checked) + .blade {
+  transform: scaleY(0);
+}
+
+#on-off:checked + .blade {
+  transform: scaleY(1);
+}
