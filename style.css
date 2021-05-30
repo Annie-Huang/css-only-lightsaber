@@ -34,3 +34,50 @@ label:not(.hilt) {
   font-weight: bold;
   align-self: start;
 }
+
+/* Lightsaber styling */
+
+.lightsaber {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+#on-off {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.hilt {
+  display: block;
+  width: 0.75rem;
+  height: 7rem;
+  background-color: red;
+  border-radius: 0 0 4px 4px;
+
+  /* If you just have   background-image: linear-gradient(silver 10px, black 20px, gold 30px);
+     it will blend-in between colors.
+     Below is the same as   background-image: linear-gradient(silver 0 10px, black 10 20px, gold 20 30px);
+   */
+  background-image: linear-gradient(
+    silver 0 10px,
+    hsl(39 75% 50%) 0 14px,
+    silver 0 15px,
+    black 0 20px,
+    silver 0 22px,
+    black 0 25px,
+    silver 0 27px,
+    black 0 30px,
+    silver 0 32px,
+    black 0 35px,
+    silver 0 37px,
+    black 0 40px,
+    silver 0 42px,
+    black 0 45px,
+    silver 0 47px,
+    black 0 50px,
+    silver 0 60px,
+    hsl(39 75% 50%) 60px 80px,
+    silver 0 100%
+  );
+}
