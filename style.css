@@ -111,4 +111,12 @@ label:not(.hilt) {
   background: hsl(var(--blade-hue) 100% 50%);
   border-radius: inherit;
   filter: blur(0.5em);
+
+  /* you will see more clearly on animation with background changed to red */
+  opacity: 1;
+  animation: pulse linear 5s infinite;
+}
+
+@keyframes pulse {
+  50% {opacity: 0.5}
 }
