@@ -184,6 +184,10 @@ label:not(.hilt) {
 #darksaber:checked ~ .lightsaber {
   --blade-lightness: 100%;
 }
+#darksaber:checked ~ .lightsaber .blade {
+  /* When it's darksaber, it is more like a blade than a sword */
+  border-radius: 100%/200px 10px 0 0;
+}
 #darksaber:checked ~ .lightsaber .blade::before {
   background: black;
 }
