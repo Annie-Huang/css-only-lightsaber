@@ -38,6 +38,7 @@ label:not(.hilt) {
 /* Lightsaber styling */
 
 .lightsaber {
+  margin-top: 25vh;
   grid-column: 1 / -1;
   position: relative;
 }
@@ -80,4 +81,13 @@ label:not(.hilt) {
     hsl(39 75% 50%) 60px 80px,
     silver 0 100%
   );
+}
+
+.blade {
+  position: absolute;
+  background: white;
+  height: 350%;
+  width: 100%;
+  bottom: 100%; /* bottom is 100% is 100% offset from bottom , so it starts from the top */
+  border-radius: 100vw 100vw 0 0;
 }
