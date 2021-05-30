@@ -117,7 +117,20 @@ label:not(.hilt) {
   opacity: 1;
   animation: pulse linear 5s infinite;
 
-  z-index: -1;
+  /* This will not work any more because transform below will create it's own context stack, Do the .blade::after solution instead */
+  /*z-index: -1;*/
+}
+
+.blade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  border-radius: inherit;
+  z-index: 10;
 }
 
 @keyframes pulse {
