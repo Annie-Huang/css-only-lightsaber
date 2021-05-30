@@ -4,4 +4,5 @@ CSS Only Lightsaber (with sound?!?!)
 https://codepen.io/kevinpowell/pen/jOygveP
 https://github.com/Annie-Huang/css-only-lightsaber
 
+https://css-tricks.com/playing-sounds-with-css/
 ================================================================
