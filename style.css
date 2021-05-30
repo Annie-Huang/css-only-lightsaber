@@ -100,3 +100,15 @@ label:not(.hilt) {
     0 0 3em hsl(var(--blade-hue) 100% 50% / 0.3),
     0 0 5em hsl(var(--blade-hue) 100% 50% / 0.2);
 }
+
+.blade::after {
+  content: ''; /* if you comment this one out, you will see the blade color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(var(--blade-hue) 100% 50%);
+  border-radius: inherit;
+  filter: blur(0.5em);
+}
