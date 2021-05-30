@@ -151,3 +151,12 @@ label:not(.hilt) {
 #on-off:checked + .blade {
   transform: scaleY(1);
 }
+
+/* change the color */
+
+/* We want to target the .lightsaber's --blad-hue value
+   Cannot use + because it's not a direct sibling, has to has ~, which means any sibling
+*/
+input[id='red']:checked ~ .lightsaber {
+  --blade-hue: 360;
+}
